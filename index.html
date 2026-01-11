@@ -16,49 +16,12 @@
     ></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Michael Panzer</title>
-    <style>
-      /* Additional styles for clickable projects */
-      .project-link {
-        display: block;
-        text-decoration: none;
-        color: inherit;
-        border: 2px solid transparent;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        background: var(--clr-bg-alt);
-        height: 100%;
-      }
-      
-      .project-link:hover {
-        transform: translateY(-5px);
-        border-color: var(--clr-primary);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      }
-      
-      .project-link:focus {
-        outline: 2px solid var(--clr-primary);
-        outline-offset: 2px;
-      }
-      
-      .project__content {
-        padding: 1.5rem;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-      
-      .project__cta {
-        margin-top: auto;
-        padding-top: 1rem;
-        text-align: center;
-      }
-    </style>
+
   </head>
   <body class="dark" id="top">
     <header class="header center">
       <h3>
-        <a href="https://michaelpanzer.github.io/portfolio" class="link">MP</a>
+        <a href="https://michaelpanzer.github.io" class="link">MP</a>
       </h3>
 
       <nav class="nav center">
@@ -141,11 +104,11 @@
         <h2 class="section__title">Projects</h2>
 
         <div class="projects__grid">
-          <!-- Vehicle Dynamics Project -->
+          <!-- Vehicle Dynamics -->
           <a 
             href="vehicle_dynamics.html" 
             class="project project-link"
-            aria-label="View Vehicle Dynamics project details"
+            aria-label="View vehicle dynamics project details"
           >
             <div class="project__content">
               <h3>Vehicle Dynamics</h3>
@@ -153,9 +116,8 @@
                 Analysis and simulation of vehicle dynamics including suspension systems, handling characteristics, and performance optimization.
               </p>
               <ul class="project__stack">
-                <li class="project__stack-item">MATLAB</li>
-                <li class="project__stack-item">SolidWorks</li>
-                <li class="project__stack-item">Simulation</li>
+                <li class="project__stack-item">Python</li>
+                <li class="project__stack-item">Jupyter</li>
               </ul>
               <div class="project__cta">
                 <span class="btn btn--outline">View Full Project →</span>
@@ -163,21 +125,22 @@
             </div>
           </a>
 
-          <!-- Mechanical Design Project -->
+          <!-- Suspension Design Project -->
           <a 
-            href="mechanical_design.html" 
+            href="suspension_design.html" 
             class="project project-link"
-            aria-label="View Mechanical Design project details"
+            aria-label="View suspension design project details"
           >
             <div class="project__content">
-              <h3>Mechanical Design</h3>
+              <h3>Suspension Design</h3>
               <p class="project__description">
-                CAD modeling and prototyping of mechanical systems with focus on manufacturability and structural integrity.
+                Mechanical design of the suspension system of a FSAE vehicle.
               </p>
               <ul class="project__stack">
                 <li class="project__stack-item">SolidWorks</li>
-                <li class="project__stack-item">Fusion 360</li>
-                <li class="project__stack-item">3D Printing</li>
+                <li class="project__stack-item">Python</li>
+                <li class="project__stack-item">Jupyter</li>
+
               </ul>
               <div class="project__cta">
                 <span class="btn btn--outline">View Full Project →</span>
@@ -185,21 +148,62 @@
             </div>
           </a>
 
-          <!-- Python Automation Project -->
+          <!-- Desktop Aquaponics Project -->
           <a 
-            href="python_automation.html" 
+            href="aquaponics.html" 
             class="project project-link"
-            aria-label="View Python Automation project details"
+            aria-label="View aquaponics project details"
           >
             <div class="project__content">
               <h3>Python Automation</h3>
               <p class="project__description">
-                Development of Python scripts for automating engineering calculations, data analysis, and simulation tasks.
+                Design of a small scale aquaponics system to grow small herbs and vegetables.
               </p>
               <ul class="project__stack">
-                <li class="project__stack-item">Python</li>
-                <li class="project__stack-item">NumPy</li>
-                <li class="project__stack-item">Pandas</li>
+                <li class="project__stack-item">OnShape</li>
+
+              </ul>
+              <div class="project__cta">
+                <span class="btn btn--outline">View Full Project →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Stair Climbing Robot Project -->
+          <a 
+            href="stair_climber.html" 
+            class="project project-link"
+            aria-label="View stair climber project details"
+          >
+            <div class="project__content">
+              <h3>Python Automation</h3>
+              <p class="project__description">
+                Design and build of a robot to climb a set of stairs, retrieve an egg, and bring it down the stairs.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">OnShape</li>
+
+              </ul>
+              <div class="project__cta">
+                <span class="btn btn--outline">View Full Project →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Stair Climbing Robot Project -->
+          <a 
+            href="neural_net.html" 
+            class="project project-link"
+            aria-label="View neural net project details"
+          >
+            <div class="project__content">
+              <h3>Python Automation</h3>
+              <p class="project__description">
+                Neural network written from scratch to recognize handwritten characters in the MNIST database.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">OnShape</li>
+
               </ul>
               <div class="project__cta">
                 <span class="btn btn--outline">View Full Project →</span>
@@ -214,12 +218,11 @@
         <h2 class="section__title">Skills</h2>
         <ul class="skills__list">
           <li class="skills__list-item btn btn--plain">Solidworks</li>
-          <li class="skills__list-item btn btn--plain">Fusion 360</li>
+          <li class="skills__list-item btn btn--plain">Fusion</li>
           <li class="skills__list-item btn btn--plain">OnShape</li>
           <li class="skills__list-item btn btn--plain">Python</li>
           <li class="skills__list-item btn btn--plain">MATLAB</li>
           <li class="skills__list-item btn btn--plain">3D Printing</li>
-          <li class="skills__list-item btn btn--plain">CAD/CAM</li>
           <li class="skills__list-item btn btn--plain">FEA Analysis</li>
         </ul>
       </section>

@@ -362,6 +362,43 @@ main {
   transition: transform 0.2s ease-in-out;
 }
 
+/* Additional styles for clickable projects */
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: var(--clr-bg-alt);
+  height: 100%;
+}
+
+.project-link:hover {
+  transform: translateY(-5px);
+  border-color: var(--clr-primary);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-link:focus {
+  outline: 2px solid var(--clr-primary);
+  outline-offset: 2px;
+}
+
+.project__content {
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project__cta {
+  margin-top: auto;
+  padding-top: 1rem;
+  text-align: center;
+}
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
