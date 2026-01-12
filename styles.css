@@ -248,7 +248,7 @@ main {
   text-transform: capitalize;
   margin-top: 1.2em;
   margin-bottom: 0.8em;
-  scroll-margin-top: 10vh;
+  scroll-margin-top: 15vh;
 }
 
 .section__body {
@@ -256,6 +256,14 @@ main {
   max-width: 1600px;
   margin-top: 0;
   margin-bottom: 1em;
+}
+
+.section__image {
+  max-height: 25rem;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
 }
 
 .nav__list {
@@ -344,10 +352,12 @@ main {
   color: var(--clr-fg-alt);
   background-color: var(--clr-bg);
   padding: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
 }
 
 .skills__list {
-  max-width: 450px;
+  max-width: 70%;
   width: 95%;
   margin: 0 auto;
   display: flex;
