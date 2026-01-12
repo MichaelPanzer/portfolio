@@ -136,14 +136,20 @@ button {
 
 .link--icon {
   color: var(--clr-fg);
-  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 1.6em;
+  height: 1.6em;
+  font-size: 200%;
 }
 
 .btn {
   display: block;
-  padding: 0.8em 1.4em;
+  padding: 0.3em 0.5em;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
 }
@@ -212,17 +218,17 @@ button {
   align-items: center;
 }
 
+
+
 .header {
   position: sticky;
   z-index: 99;
   top: 0;
   padding: 10px 16px;
-  height: 8em;
-  max-width: 1100px;
-  width: 95%;
+  height: 5em;
   margin: 0 auto;
   justify-content: space-between;
-  border-color: var(--clr-primary);
+  border-bottom: 0.02rem solid var(--clr-primary);
 
 }
 
@@ -279,9 +285,7 @@ main {
   margin-top: 2.4em;
 }
 
-.about .link--icon {
-  margin-right: 0.8em;
-}
+
 
 .about .btn--outline {
   margin-right: 1em;
@@ -315,18 +319,16 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1.2em 0;
+  margin: 0.5em 0;
 }
 
 .project__stack-item {
   margin: 0.5em;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--clr-fg-alt);
-}
-
-.project .link--icon {
-  margin-left: 0.5em;
+  background-color: var(--clr-bg);
+  padding: 0.8rem;
 }
 
 .skills__list {
@@ -356,6 +358,8 @@ main {
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--clr-fg);
+  align-items: right;
+
 }
 
 .scroll-top {
@@ -373,12 +377,13 @@ main {
   display: block;
   text-decoration: none;
   color: inherit;
-  border: 2px solid transparent;
-  border-radius: 8px;
+  border: 1% solid transparent;
+  border-radius: 2%;
   transition: all 0.3s ease;
   cursor: pointer;
   background: var(--clr-bg-alt);
   height: 100%;
+  padding: 10%
 }
 
 .project-link:hover {
@@ -393,7 +398,6 @@ main {
 }
 
 .project__content {
-  padding: 1.0rem;
   height: 100%;
   display: flex;
   flex-direction: column;
