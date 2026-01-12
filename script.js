@@ -31,6 +31,46 @@ const toggleTheme = () =>
 
 btnTheme.addEventListener('click', toggleTheme)
 
+// Listen for theme changes in the OS/browser
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+  // Only auto-switch if user hasn't manually set a preference
+  if (!localStorage.getItem('theme')) {
+    if (event.matches) {
+      // Switch to dark mode
+      if (!document.body.classList.contains('dark')) {
+        toggleTheme();
+      }
+    } else {
+      // Switch to light mode
+      if (document.body.classList.contains('dark')) {
+        toggleTheme();
+      }
+    }
+  }
+});
+
+// On page load
+document.addEventListener('DOMContentLoaded', function() {
+  const savedTheme = localStorage.getItem('theme');
+  
+  if (savedTheme) {
+    // Use saved preference
+    if (savedTheme === 'dark' && !document.body.classList.contains('dark')) {
+      toggleTheme();
+    }
+  } else {
+    // Use system preference
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      if (!document.body.classList.contains('dark')) {
+        toggleTheme();
+      }
+    }
+  }
+  
+  // Add click event to theme toggle button
+  document.getElementById('btn-theme').addEventListener('click', toggleTheme);
+});
+
 const displayList = () => {
 	const navUl = document.querySelector('.nav__list')
 
