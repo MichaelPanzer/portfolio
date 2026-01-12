@@ -130,7 +130,7 @@ button {
 
 .link--nav {
   color: var(--clr-fg);
-  text-transform: lowercase;
+  text-transform: capitalize;
   font-weight: 500;
 }
 
@@ -245,8 +245,17 @@ main {
 
 .section__title {
   text-align: center;
+  text-transform: capitalize;
+  margin-top: 1.2em;
+  margin-bottom: 0.8em;
+  scroll-margin-top: 10vh;
+}
+
+.section__body {
+  font-size: 1.5rem;
+  max-width: 1600px;
+  margin-top: 0;
   margin-bottom: 1em;
-  text-transform: uppercase;
 }
 
 .nav__list {
@@ -270,10 +279,13 @@ main {
 
 .about__name {
   color: var(--clr-primary);
+  scroll-margin-top: 10vh;
+
 }
 
 .about__role {
   margin-top: 1.2em;
+  scroll-margin-top: 10vh;
 }
 
 .about__desc {
@@ -285,6 +297,8 @@ main {
 .about__contact {
   margin-top: 2.4em;
 }
+
+
 
 
 
