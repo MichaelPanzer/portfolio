@@ -26,6 +26,18 @@
 
       <nav class="nav center">
         <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#Intro">Intro</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#Frame">Frame</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#Electronics">Electronics</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#Future Plans">Future Plans</a>
+          </li>
         </ul>
 
         <button type="button" aria-label="toggle theme" class="btn btn--icon">
@@ -70,6 +82,13 @@
           The entire system is controlled with an Arduino Uno and a custom circuit built on a prototyping shield. 
           The Arduino manages the timing of the water pump and grow lights using a DS3231 RTC module and powers Bridgelux LED light strips via constant-current buck converters. 
           A low-cost USB aquarium pump is actuated using a MOSFET and set on a timer to fill and drain the grow bed.
+        </p>
+
+        <h3 class="section__title" id="Future Plans">  Future Plans</h3>
+        <p class="section__body">
+          The current prototype has been working reliably for nearly a year, successfully providing me with fresh vegetables, however I plan several upgrades to improve its performance and maintainability. 
+          Converting to an ESP32 microcontroller with WiFi capability, would eliminate the need for a separate RTC module and enable remote configuration and monitoring. 
+          Additionally, moving from the breadboard shield to a custom PCB with integrated LED drivers would reduce points of failure and significantly clean up the wiring.
         </p>
 
 
