@@ -260,6 +260,7 @@ main {
 
 .section__image {
   max-height: 25rem;
+  max-width: 45rem;
   display: block;
   margin-top: 1rem;
   margin-bottom: 1rem;
