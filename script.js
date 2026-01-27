@@ -1,7 +1,6 @@
 const body = document.body
 
 const btnTheme = document.querySelector('.fa-moon')
-const btnHamburger = document.querySelector('.fa-bars')
 
 const addThemeClass = (bodyClass, btnClass) => {
   body.classList.add(bodyClass)
@@ -55,12 +54,33 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
       if (!document.body.classList.contains('dark')) {
         toggleTheme();
       }
+    } 
+});
+
+window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', event => {
+  /*
+  // Only auto-switch if user hasn't manually set a preference
+  if (!localStorage.getItem('theme')) {
+    if (event.matches) {
+      // Switch to dark mode
+      if (!document.body.classList.contains('dark')) {
+        toggleTheme();
+      }
     } else {
       // Switch to light mode
       if (document.body.classList.contains('dark')) {
         toggleTheme();
       }
     }
+  }
+  */
+
+  if (event.matches) {
+      // Switch to dark mode
+      if (!document.body.classList.contains('light')) {
+        toggleTheme();
+      }
+    } 
 });
 
 // On page load
