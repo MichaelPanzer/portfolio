@@ -321,11 +321,11 @@ main {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  grid-gap: 2em;
+  gap: 2em;
 }
 
 .project {
-  padding: 2em;
+  padding: 0;
   margin: 0 auto;
   text-align: center;
   box-shadow: var(--shadow);
@@ -344,16 +344,15 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0.5em 0;
 }
 
 .project__stack-item {
-  margin: 0.5em;
+  margin: 0.4em;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--clr-fg-alt);
   background-color: var(--clr-bg);
-  padding: 0.8rem;
+  padding: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 
 }
