@@ -36,7 +36,7 @@ body {
 }
 
 .dark {
-  --clr-bg: #23283e;
+  --clr-bg: #232831;
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
@@ -151,7 +151,7 @@ button {
   padding: 0.3em 0.5em;
   font-weight: 500;
   font-size: 1.4rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -248,7 +248,8 @@ main {
   text-transform: capitalize;
   margin-top: 1.2em;
   margin-bottom: 0.8em;
-  scroll-margin-top: 15vh;
+  scroll-margin-top: 13vh;
+
 }
 
 .section__body {
